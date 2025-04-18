@@ -24,5 +24,6 @@ const StyledText = styled.div`
   @media (max-width: ${BREAKPOINT.MEDIUM}) {
     ${TEXTS.M};
     font-family: ${FONTFAMILY.NOTO_SANS};
+    width: 100%;
   }
 `;
