@@ -1,4 +1,4 @@
-import { EditButton } from "./index";
+import { EditButton } from "./index.jsx";
 export default { component: EditButton };
 
 export const Default = {
