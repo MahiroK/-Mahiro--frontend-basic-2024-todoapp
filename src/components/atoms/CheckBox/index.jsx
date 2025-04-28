@@ -29,7 +29,6 @@ const BoxImage = styled.img`
   width: 100%;
   height: 100%;
   opacity: 0;
-  position: absolute;
   top: 0;
   left: 0;
 `;
