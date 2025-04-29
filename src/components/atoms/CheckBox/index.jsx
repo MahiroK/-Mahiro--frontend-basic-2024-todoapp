@@ -16,7 +16,6 @@ const CheckboxStyle = styled.div`
   height: 20px;
   background-color: transparent;
   border: 2px solid ${COLOR.LIGHT_GRAY};
-  position: relative;
   border-radius: 2px;
   gap: 10px;
 
@@ -29,6 +28,4 @@ const BoxImage = styled.img`
   width: 100%;
   height: 100%;
   opacity: 0;
-  top: 0;
-  left: 0;
 `;
