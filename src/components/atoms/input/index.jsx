@@ -23,26 +23,20 @@ export const input = (onEditComplete, defaultValue) => {
   }, []);
 
   return (
-    <BlackBarStyle>
-      <BlackBarTextStyle
-        ref={inputRef}
-        type="text"
-        defaultValue={defaultValue?.text ?? ""}
-        onBlur={handleBlur}
-        onKeyDown={handleKeyDown}
-      />
-    </BlackBarStyle>
+    <BlackBarTextStyle
+      ref={inputRef}
+      type="text"
+      defaultValue={defaultValue?.text ?? ""}
+      onBlur={handleBlur}
+      onKeyDown={handleKeyDown}
+    />
   );
 };
 
-const BlackBarStyle = styled.div`
+const BlackBarTextStyle = styled.input`
   width: 100%;
   padding: 0px 4px;
   border-radius: 2px;
-  background-color: ${COLOR.BLACK};
-`;
-
-const BlackBarTextStyle = styled.input`
   letter-spacing: 0%;
   background-color: ${COLOR.BLACK};
   border: none;
