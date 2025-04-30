@@ -18,6 +18,10 @@ const CheckboxStyle = styled.div`
   border: 2px solid ${COLOR.LIGHT_GRAY};
   border-radius: 2px;
   gap: 10px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover img {
     opacity: 1;
@@ -28,4 +32,7 @@ const BoxImage = styled.img`
   width: 100%;
   height: 100%;
   opacity: 0;
+  opacity: 0;
+  vertical-align: middle;
+  display: block;
 `;
