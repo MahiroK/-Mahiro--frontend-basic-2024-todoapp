@@ -5,14 +5,14 @@ import COLOR from "../../../variables/color.js";
 import TEXTS from "../../../variables/texts.js";
 import FONTFAMILY from "../../../variables/font_family.js";
 
-export const AddTaskButton = () => {
+export default function AddTaskButton() {
   return (
     <ButtonStyle>
       <ButtonImage src={Plus} />
       <ButtonText> タスクを追加 </ButtonText>
     </ButtonStyle>
   );
-};
+}
 const ButtonImage = styled.img`
   width: 20px;
   height: 20px;

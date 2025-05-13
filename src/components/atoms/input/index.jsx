@@ -5,12 +5,13 @@ import TEXTS from "../../../variables/texts";
 import styled from "styled-components";
 import { use } from "react";
 
-export const input = (onEditComplete, defaultValue) => {
+const input = ({ onEditComplete, defaultValue }) => {
   const inputRef = useRef();
   const handleBlur = () => {
     const value = inputRef.current.value;
     onEditComplete(value);
   };
+
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
       const value = inputRef.current.value;
@@ -32,7 +33,7 @@ export const input = (onEditComplete, defaultValue) => {
     />
   );
 };
-
+export default input;
 const BlackBarTextStyle = styled.input`
   width: 100%;
   padding: 0px 4px;
