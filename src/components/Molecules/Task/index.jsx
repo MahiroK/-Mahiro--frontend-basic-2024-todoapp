@@ -4,7 +4,7 @@ import COLOR from "../../../variables/color";
 import FONTFAMILY from "../../../variables/font_family";
 import TEXT from "../../../variables/texts";
 
-import CheckBox from "../../Atoms/CheckBox";
+import CheckBox from "../../Atoms/CheckBox/index";
 import EditButton from "../../Atoms/EditButton";
 import Input from "../../Atoms/input";
 
