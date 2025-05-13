@@ -1,4 +1,4 @@
-import { input } from "./index";
+import input from "./index";
 // ここで呼び出している
 //storybookで確認できるようにしている
 export default { component: input };
