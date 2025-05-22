@@ -5,7 +5,7 @@ import COLOR from "../../../variables/color.js";
 import TEXTS from "../../../variables/texts.js";
 import FONTFAMILY from "../../../variables/font_family.js";
 
-export const AddTaskButton = () => {
+const AddTaskButton = () => {
   return (
     <ButtonStyle>
       <ButtonImage src={Plus} />
@@ -13,6 +13,9 @@ export const AddTaskButton = () => {
     </ButtonStyle>
   );
 };
+
+export default AddTaskButton;
+
 const ButtonImage = styled.img`
   width: 20px;
   height: 20px;

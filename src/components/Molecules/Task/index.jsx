@@ -6,7 +6,7 @@ import TEXT from "../../../variables/texts";
 
 import CheckBox from "../../Atoms/CheckBox/index";
 import EditButton from "../../Atoms/EditButton";
-import Input from "../../Atoms/input";
+import Input from "../../Atoms/Input";
 
 const Task = ({
   onTaskNameChange,
@@ -26,22 +26,22 @@ const Task = ({
   };
 
   return (
-    <StyledWrapper>
-      <Left>
+    <StyleFrame>
+      <StyledWrapper>
         <CheckBox onClick={onTaskComplete} />
         {isEditing ? (
           <Input onEditComplete={onEditComplete} defaultValue={taskName} />
         ) : (
           <StyledText>{taskName}</StyledText>
         )}
-      </Left>
-      {!isEditing && <EditButton onClick={onEditButtonClick} />}
-    </StyledWrapper>
+        {!isEditing && <EditButton onClick={onEditButtonClick} />}
+      </StyledWrapper>
+    </StyleFrame>
   );
 };
 export default Task;
 
-const Left = styled.div`
+const StyleFrame = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;

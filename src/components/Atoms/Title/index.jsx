@@ -7,9 +7,11 @@ import FONTFAMILY from "../../../variables/font_family.js";
 import BREAKPOINT from "../../../variables/breakpoint.js";
 
 // 画面に表示する部分を作っている　exportを書くことによって、外部からでも参照ができるようになる
-export const Title = () => {
+const Title = () => {
   return <StyledText>SIMPLE TODO APP</StyledText>;
 };
+
+export default Title;
 
 // CSS部分　スタイリングを行う
 // styled-componentsを使っている
