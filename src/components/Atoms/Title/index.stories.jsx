@@ -1,4 +1,4 @@
-import { Title } from "./index";
+import Title from "./index";
 // ここで呼び出している
 //storybookで確認できるようにしている
 export default { component: Title };

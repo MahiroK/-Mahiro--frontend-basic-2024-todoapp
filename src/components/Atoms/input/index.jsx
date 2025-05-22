@@ -5,7 +5,7 @@ import TEXTS from "../../../variables/texts";
 import styled from "styled-components";
 import { use } from "react";
 
-export const input = (onEditComplete, defaultValue) => {
+const Input = ({ onEditComplete, defaultValue }) => {
   const inputRef = useRef();
   const handleBlur = () => {
     const value = inputRef.current.value;
@@ -32,7 +32,7 @@ export const input = (onEditComplete, defaultValue) => {
     />
   );
 };
-
+export default Input;
 const BlackBarTextStyle = styled.input`
   width: 100%;
   padding: 0px 4px;
