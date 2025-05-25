@@ -6,7 +6,7 @@ import TEXT from "../../../variables/texts";
 
 import CheckBox from "../../Atoms/CheckBox/index";
 import EditButton from "../../Atoms/EditButton";
-import Input from "../../Atoms/Input";
+import Input from "../../Atoms/Input/index.jsx";
 
 const Task = ({
   onTaskNameChange,
@@ -43,16 +43,15 @@ export default Task;
 
 const StyleFrame = styled.div`
   display: flex;
-  align-items: center;
-  gap: 8px;
-  flex: 1;
+  gap: 10px;
+  width: 100%;
+  justify-content: space-between;
 `;
 
 const StyledWrapper = styled.div`
   display: flex;
-  padding: 2px 6px;
-  align-items: center;
-  justify-content: space-between;
+  gap: 10px;
+  padding: 2px, 6px;
 `;
 
 const StyledText = styled.p`

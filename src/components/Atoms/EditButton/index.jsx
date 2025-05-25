@@ -4,13 +4,14 @@ import pencilIcon from "../../../assets/svg/pencil.svg";
 import styled from "styled-components";
 import COLOR from "../../../variables/color";
 
-export const EditButton = ({ onClick }) => {
+const EditButton = ({ onClick }) => {
   return (
     <ButtonWrapper onClick={onClick}>
       <img src={pencilIcon} alt="Edit" />
     </ButtonWrapper>
   );
 };
+export default EditButton;
 
 const ButtonWrapper = styled.button`
   cursor: pointer;
