@@ -6,7 +6,7 @@ import TEXT from "../../../variables/texts";
 
 import CheckBox from "../../Atoms/CheckBox/index";
 import EditButton from "../../Atoms/EditButton";
-import Input from "../../Atoms/Input/index.jsx";
+import Input from "../../Atoms/Input/index";
 
 const Task = ({
   onTaskNameChange,
