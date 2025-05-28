@@ -1,8 +1,6 @@
-import Task from "./index.jsx";
-export default {
-  title: "Components/Molecules/Task",
-  component: Task,
-};
+import { Task } from "./index";
+export default { component: Task };
+
 export const Default = {
   args: {
     onTaskNameChange: (value) => console.log("Task name changed to:", value),

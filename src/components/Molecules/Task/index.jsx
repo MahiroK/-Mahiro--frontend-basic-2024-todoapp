@@ -4,11 +4,11 @@ import COLOR from "../../../variables/color";
 import FONTFAMILY from "../../../variables/font_family";
 import TEXT from "../../../variables/texts";
 
-import CheckBox from "../../Atoms/CheckBox/index";
-import EditButton from "../../Atoms/EditButton";
-import Input from "../../Atoms/Input/index";
+import { CheckBox } from "../../Atoms/CheckBox/index";
+import { EditButton } from "../../Atoms/EditButton/index";
+import { Input } from "../../Atoms/Input/index";
 
-const Task = ({
+export const Task = ({
   onTaskNameChange,
   onTaskComplete,
   taskName,
@@ -39,7 +39,7 @@ const Task = ({
     </StyleFrame>
   );
 };
-export default Task;
+// export default Task;
 
 const StyleFrame = styled.div`
   display: flex;

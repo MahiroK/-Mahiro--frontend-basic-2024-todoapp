@@ -1,5 +1,5 @@
 import { CheckBox } from "./index";
 
-export default { component: CheckBox, title: "Atoms/CheckBox" };
+export default { component: CheckBox };
 
 export const Default = {};

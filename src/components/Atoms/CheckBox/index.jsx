@@ -3,14 +3,14 @@ import styled from "styled-components";
 import COLOR from "../../../variables/color.js";
 import Check from "../../../assets/svg/check.svg";
 
-const CheckBox = () => {
+export const CheckBox = () => {
   return (
     <CheckboxStyle>
       <BoxImage src={Check} />
     </CheckboxStyle>
   );
 };
-export default CheckBox;
+// export default CheckBox;
 
 const CheckboxStyle = styled.div`
   width: 20px;
