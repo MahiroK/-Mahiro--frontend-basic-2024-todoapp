@@ -26,26 +26,25 @@ export const Task = ({
   };
 
   return (
-    <StyleFrame>
-      <StyledWrapper>
-        <CheckBox onClick={onTaskComplete} />
-        {isEditing ? (
-          <Input onEditComplete={onEditComplete} defaultValue={taskName} />
-        ) : (
+    <StyledWrapper>
+      <CheckBox onClick={onTaskComplete} />
+      {isEditing ? (
+        <Input onEditComplete={onEditComplete} defaultValue={taskName} />
+      ) : (
+        <StyleTextButton>
           <StyledText>{taskName}</StyledText>
-        )}
-        {!isEditing && <EditButton onClick={onEditButtonClick} />}
-      </StyledWrapper>
-    </StyleFrame>
+          <EditButton onClick={onEditButtonClick} />
+        </StyleTextButton>
+      )}
+    </StyledWrapper>
   );
 };
 // export default Task;
 
-const StyleFrame = styled.div`
+const StyleTextButton = styled.div`
   display: flex;
-  gap: 10px;
-  width: 100%;
   justify-content: space-between;
+  width: 100%;
 `;
 
 const StyledWrapper = styled.div`
