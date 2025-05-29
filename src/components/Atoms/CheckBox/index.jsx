@@ -10,7 +10,6 @@ export const CheckBox = () => {
     </CheckboxStyle>
   );
 };
-// export default CheckBox;
 
 const CheckboxStyle = styled.div`
   width: 20px;

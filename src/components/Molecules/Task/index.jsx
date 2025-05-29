@@ -39,7 +39,6 @@ export const Task = ({
     </StyledWrapper>
   );
 };
-// export default Task;
 
 const StyleTextButton = styled.div`
   display: flex;

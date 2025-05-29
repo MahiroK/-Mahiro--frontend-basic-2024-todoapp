@@ -31,7 +31,7 @@ export const Input = ({ onEditComplete, defaultValue }) => {
     />
   );
 };
-// export default Input;
+
 const BlackBarTextStyle = styled.input`
   width: 100%;
   padding: 0px 4px;

@@ -11,7 +11,6 @@ export const EditButton = ({ onClick }) => {
     </ButtonWrapper>
   );
 };
-// export default EditButton;
 
 const ButtonWrapper = styled.button`
   cursor: pointer;
