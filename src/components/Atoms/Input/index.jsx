@@ -3,9 +3,8 @@ import COLOR from "../../../variables/color";
 import FONTFAMILY from "../../../variables/font_family";
 import TEXTS from "../../../variables/texts";
 import styled from "styled-components";
-import { use } from "react";
 
-export const input = (onEditComplete, defaultValue) => {
+export const Input = ({ onEditComplete, defaultValue }) => {
   const inputRef = useRef();
   const handleBlur = () => {
     const value = inputRef.current.value;

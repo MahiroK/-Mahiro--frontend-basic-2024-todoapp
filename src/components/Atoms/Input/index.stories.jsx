@@ -1,6 +1,6 @@
-import { Title } from "./index";
+import { Input } from "./index";
 // ここで呼び出している
 //storybookで確認できるようにしている
-export default { component: Title };
+export default { component: Input };
 
 export const Default = {};
