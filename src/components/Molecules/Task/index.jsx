@@ -49,7 +49,7 @@ const StyleTextButton = styled.div`
 const StyledWrapper = styled.div`
   display: flex;
   gap: 10px;
-  padding: 2px, 6px;
+  padding: 2px 6px;
 `;
 
 const StyledText = styled.p`
