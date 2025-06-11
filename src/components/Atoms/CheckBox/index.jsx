@@ -3,10 +3,10 @@ import styled from "styled-components";
 import COLOR from "../../../variables/color.js";
 import Check from "../../../assets/svg/check.svg";
 
-export const CheckBox = () => {
+export const CheckBox = ({ onClick }) => {
   return (
     <CheckboxStyle>
-      <BoxImage src={Check} />
+      <BoxImage src={Check} onClick={onClick} />
     </CheckboxStyle>
   );
 };

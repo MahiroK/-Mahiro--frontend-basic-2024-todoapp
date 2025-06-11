@@ -5,9 +5,9 @@ import COLOR from "../../../variables/color.js";
 import TEXTS from "../../../variables/texts.js";
 import FONTFAMILY from "../../../variables/font_family.js";
 
-const AddTaskButton = () => {
+const AddTaskButton = ({ onClick }) => {
   return (
-    <ButtonStyle>
+    <ButtonStyle onClick={onClick}>
       <ButtonImage src={Plus} />
       <ButtonText> タスクを追加 </ButtonText>
     </ButtonStyle>

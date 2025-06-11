@@ -25,7 +25,7 @@ export const Input = ({ onEditComplete, defaultValue }) => {
     <BlackBarTextStyle
       ref={inputRef}
       type="text"
-      defaultValue={defaultValue?.text ?? ""}
+      defaultValue={defaultValue}
       onBlur={handleBlur}
       onKeyDown={handleKeyDown}
     />
