@@ -1,5 +1,5 @@
 //インポート
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Task } from "../../Molecules/Task";
 import styled from "styled-components";
 import COLOR from "../../../variables/color";
@@ -38,6 +38,19 @@ export default function TodoCard() {
       );
     }
   };
+  //初期化した時に文字が残る処理
+  useEffect(() => {
+    const TaskJson = localStorage.getItem("taskList");
+    if (TaskJson) {
+      setTaskList(JSON.parse(TaskJson));
+    }
+  }, []);
+
+  //データを保存する処理・stateの状態が変わった時
+  useEffect(() => {
+    localStorage.setItem("taskList", JSON.stringify(taskList));
+  }, [taskList]);
+
   // AddTaskButtonのタグを一つにする
   return (
     <StyledWrapper>
