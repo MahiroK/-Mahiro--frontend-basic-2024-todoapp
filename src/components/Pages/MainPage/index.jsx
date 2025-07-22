@@ -2,6 +2,7 @@ import React from "react";
 import TodoCard from "../../../components/Organisms/TodoCard";
 import Title from "../../../components/Atoms/Title";
 import styled from "styled-components";
+import { AlertManager } from "../../../components/Organisms/AlertManager"; // ← 追加
 
 export const MainPage = () => {
   return (
@@ -9,6 +10,7 @@ export const MainPage = () => {
       <StyledWrapper>
         <Title />
         <TodoCard />
+        <AlertManager />
       </StyledWrapper>
     </Main>
   );
