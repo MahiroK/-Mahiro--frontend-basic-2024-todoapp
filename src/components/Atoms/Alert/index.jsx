@@ -6,7 +6,7 @@ import BREAKPOINT from "../../../variables/breakpoint";
 import FONTFAMILY from "../../../variables/font_family";
 import TEXT from "../../../variables/texts.js";
 
-export const Alert = () => {
+const Alert = () => {
   const AlertHandlerContext = useAlertHandlerContext();
 
   return (
@@ -15,6 +15,8 @@ export const Alert = () => {
     </StyledWrapper>
   );
 };
+
+export default Alert;
 
 //ここにアニメーション機能と上に重なるように表示される機能を加える
 const StyledWrapper = styled.div`
