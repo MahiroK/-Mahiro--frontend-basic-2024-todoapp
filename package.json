@@ -4,7 +4,9 @@
   "main": "index.js",
   "repository": "https://github.com/shinonome-inc/frontend-basic-2022-todoapp.git",
   "author": "MoAI522",
+  "homepage": "https://mahirok.github.io/-Mahiro--frontend-basic-2024-todoapp",
   "license": "MIT",
+  
   "scripts": {
     "sb": "storybook dev -p 6006 -s ./src",
     "dev": "webpack serve --open --mode development",
