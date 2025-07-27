@@ -85,6 +85,7 @@ const StyledWrapper = styled.div`
   width: 100%;
   border-radius: 4px;
   padding: 20px;
+  display: flex;
   flex-direction: column;
 `;
 const StyledTaskList = styled.div`
