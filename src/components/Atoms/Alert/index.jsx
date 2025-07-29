@@ -1,4 +1,5 @@
 // 例）isActive の Props に応じて文字色を変化させたい場合
+import React from "react";
 import styled from "styled-components";
 import { useAlertHandlerContext } from "../../contexts/alert_handler.jsx";
 import COLOR from "../../../variables/color";
