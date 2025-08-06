@@ -1,15 +1,18 @@
 //インポート
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Task } from "../../Molecules/Task";
 import styled from "styled-components";
 import COLOR from "../../../variables/color";
 import AddTaskButton from "../../Atoms/AddTaskButton";
+import { useAlertHandlerContext } from "../../contexts/alert_handler";
 
 export default function TodoCard() {
   // useStateの中にある[]の意味＞複数の値の時に用いる。空白でも使う理由としては、タスクリストが空配列の意味を表すことが多い。
   //　空の配列として定義することを意味している・型を合わせるため
   // initializing True
   // タスクを追加すると編集状態のタスクが出てくる
+
+  const AlertHandlerContext = useAlertHandlerContext();
   const [taskList, setTaskList] = useState([]);
   const onAddTaskButtonClick = () => {
     const newTask = {
@@ -27,6 +30,7 @@ export default function TodoCard() {
     //編集したいものに対してアプローチをしている。
     if (value === "") {
       setTaskList(taskList.filter((_, taskIndex) => taskIndex !== index));
+      AlertHandlerContext.setAlert("タスクの内容を入力してください");
     } else {
       setTaskList(
         taskList.map((taskElement, taskIndex) => {
@@ -38,6 +42,19 @@ export default function TodoCard() {
       );
     }
   };
+  //初期化した時に文字が残る処理
+  useEffect(() => {
+    const TaskJson = localStorage.getItem("taskList");
+    if (TaskJson) {
+      setTaskList(JSON.parse(TaskJson));
+    }
+  }, []);
+
+  //データを保存する処理・stateの状態が変わった時
+  useEffect(() => {
+    localStorage.setItem("taskList", JSON.stringify(taskList));
+  }, [taskList]);
+
   // AddTaskButtonのタグを一つにする
   return (
     <StyledWrapper>
@@ -65,8 +82,10 @@ export default function TodoCard() {
 //styled-component
 const StyledWrapper = styled.div`
   background-color: ${COLOR.LIGHT_BLACK};
+  width: 100%;
   border-radius: 4px;
   padding: 20px;
+  display: flex;
   flex-direction: column;
 `;
 const StyledTaskList = styled.div`
